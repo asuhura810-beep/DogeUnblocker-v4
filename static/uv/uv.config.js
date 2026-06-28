@@ -1,6 +1,7 @@
 self.__uv$config = {
     prefix: '/service/',
-    bare: 'https://tomp.app/', // ここを書き換える！
+    // 複数のBare Serverを切り替えるか、別のURLを指定
+    bare: 'https://proxy.student-corner.net/', 
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: '/uv/uv.handler.js',
@@ -8,3 +9,4 @@ self.__uv$config = {
     config: '/uv/uv.config.js',
     sw: '/uv/uv.sw.js',
 };
+
